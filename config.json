@@ -1,0 +1,1107 @@
+[
+    {
+        "source_container": "source",
+        "source_file_name": "wwi/DimCity.csv",
+        "target_container": "staging",
+        "target_file_name": "wwi/DimCity.parquet",
+        "skip_line_count": 1,
+        "mapping": {
+            "type":"TabularTranslator",
+            "mappings": [
+                {
+                    "source": {
+                        "name": "City Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "City_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "WWI City ID",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "WWI_City_ID",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "City",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "City",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "State Province",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "State_Province",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Country",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Country",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Continent",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Continent",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Sales Territory",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Sales_Territory",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Region",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Region",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Subregion",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Subregion",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Location",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Location",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Latitude",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Latitude",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Latest Recorded Population",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Latest_Recorded_Population",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid From",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_From",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid To",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_To",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Lineage Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Lineage_Key",
+                        "physicalType": "UTF8"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "source_container": "source",
+        "source_file_name": "wwi/DimEmployee.csv",
+        "target_container": "staging",
+        "target_file_name": "wwi/DimEmployee.parquet",
+        "skip_line_count": 0,
+        "mapping": {
+            "type": "TabularTranslator",
+            "mappings": [
+                {
+                    "source": {
+                        "name": "Employee Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Employee_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "WWI Employee ID",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "WWI_Employee_ID",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Employee",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Employee",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Preferred Name",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Preferred_Name",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Is Salesperson",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Is_Salesperson",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Photo",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Photo",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid From",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_From",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid To",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_To",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Lineage Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Lineage_Key",
+                        "physicalType": "UTF8"
+                    }
+                }
+            ]
+        }
+        
+    },
+    {
+        "source_container": "source",
+        "source_file_name": "wwi/FactSale.csv",
+        "target_container": "staging",
+        "target_file_name": "wwi/FactSale.parquet",
+        "skip_line_count": 0,
+        "mapping": {
+            "type": "TabularTranslator",
+            "mappings": [
+                {
+                    "source": {
+                        "name": "Sale Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Sale_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "City Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "City_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Customer Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Customer_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Bill To Customer Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Bill To Customer_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Stock Item Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Stock_Item_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Invoice Date Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Invoice_Date_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Delivery Date Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Delivery_Date_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Salesperson Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Salesperson_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "WWI Invoice ID",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "WWI_Invoice_ID",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Description",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Description",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Package",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Package",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Quantity",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Quantity",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Unit Price",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Unit_Price",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Tax Rate",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Tax_Rate",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Total Excluding Tax",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Total_Excluding_Tax",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Tax Amount",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Tax_Amount",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Profit",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Profit",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Total Including Tax",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Total_Including_Tax",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Total Dry Items",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Total_Dry_Items",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Total Chiller Items",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Total_Chiller_Items",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Lineage Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Lineage_Key",
+                        "physicalType": "UTF8"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "source_container": "source",
+        "source_file_name": "wwi/DimCustomer.csv",
+        "target_container": "staging",
+        "target_file_name": "wwi/DimCustomer.parquet",
+        "skip_line_count": 1,
+        "mapping": {
+            "type": "TabularTranslator",
+            "mappings": [
+                {
+                    "source": {
+                        "name": "Customer Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Customer_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "WWI Customer ID",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "WWI_Customer_ID",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Customer",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Customer",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Bill To Customer",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Bill_To_Customer",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Category",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Category",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Buying Group",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Buying Group",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Primary Contact",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Primary_Contact",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Postal Code",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Postal_Code",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Credit Limit",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Credit_Limit",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid From",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_From",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid To",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_To",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Lineage Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Lineage_Key",
+                        "physicalType": "UTF8"
+                    }
+                }
+            ]
+        }        
+    },
+    {
+        "source_container": "source",
+        "source_file_name": "wwi/DimDate.csv",
+        "target_container": "staging",
+        "target_file_name": "wwi/DimDate.parquet",
+        "skip_line_count": 0,
+        "mapping": {
+            "type": "TabularTranslator",
+            "mappings": [
+                {
+                    "source": {
+                        "name": "Date",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Date",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Day Number",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Day_Number",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Day",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Day",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Month",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Month",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Short Month",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Short_Month",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Calendar Month Number",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Calendar_Month_Number",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Calendar Month Label",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Calendar_Month_Label",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Calendar Year",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Calendar_Year",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Calendar Year Label",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Calendar_Year_Label",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Fiscal Month Number",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Fiscal_Month_Number",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Fiscal Month Label",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Fiscal_Month_Label",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Fiscal Year",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Fiscal_Year",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Fiscal Year Label",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Fiscal_Year_Label",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "ISO Week Number",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "ISO_Week_Number",
+                        "physicalType": "UTF8"
+                    }
+                }
+            ]
+        }
+                
+    },
+    {
+        "source_container": "source",
+        "source_file_name": "wwi/DimStockItem.csv",
+        "target_container": "staging",
+        "target_file_name": "wwi/DimStockItem.parquet",
+        "skip_line_count": 1,
+        "mapping": {
+            "type": "TabularTranslator",
+            "mappings": [
+                {
+                    "source": {
+                        "name": "Stock Item Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Stock_Item_Key",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "WWI Stock Item ID",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "WWI_Stock_Item_ID",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Stock Item",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Stock_Item",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Color",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Color",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Selling Package",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Selling_Package",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Buying Package",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Buying_Package",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Brand",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Brand",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Size",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Size",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Lead Time Days",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Lead_Time_Days",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Quantity Per Outer",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Quantity_Per_Outer",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Is Chiller Stock",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Is-Chiller_Stock",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Barcode",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Barcode",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Tax Rate",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Tax_Rate",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Unit Price",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Unit_Price",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Recommended Retail Price",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Recommended_Retail_Price",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Typical Weight Per Unit",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Typical_Weight_Per_Unit",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Photo",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Photo",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Discount",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Discount",
+                        "type": "String",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid From",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_From",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Valid To",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Valid_To",
+                        "physicalType": "UTF8"
+                    }
+                },
+                {
+                    "source": {
+                        "name": "Lineage Key",
+                        "type": "String",
+                        "physicalType": "String"
+                    },
+                    "sink": {
+                        "name": "Lineage_Key",
+                        "physicalType": "UTF8"
+                    }
+                }
+            ]
+        }   
+    }
+]
